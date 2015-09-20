@@ -9,3 +9,5 @@ var Context =
   window.oAudioContext ||
 
   window.msAudioContext;
+
+var context = new Context( );
