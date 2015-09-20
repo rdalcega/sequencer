@@ -6,7 +6,7 @@ var playSound = function( buffer, offset ) {
 
   source.buffer = buffer;
 
-  source.connect = context.destination;
+  source.connect( context.destination );
 
   source.start( offset );
 
