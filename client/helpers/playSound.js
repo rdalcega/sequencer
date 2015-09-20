@@ -8,6 +8,6 @@ var playSound = function( buffer, offset ) {
 
   source.connect( window.context.destination );
 
-  source.start( offset );
+  source.start( context.currentTime + offset );
 
 };
