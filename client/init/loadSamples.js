@@ -18,7 +18,7 @@ sampleNames.forEach( function( name ) {
 
   requestSample( name, function( audioBuffer ) {
 
-    samplesBuffers[ name ] = audioBuffer;
+    sampleBuffers[ name ] = audioBuffer;
 
   });
 

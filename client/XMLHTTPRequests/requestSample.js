@@ -10,13 +10,13 @@ var requestSample = function( name, callback ) {
 
     'GET',
 
-    '/static/samples/' + name + '.aif',
+    '/static/samples/' + name + '.wav',
 
     true
 
   );
 
-  request.responseType = 'arrayBuffer';
+  request.responseType = 'arraybuffer';
 
   request.onload = function( ) {
 
@@ -32,7 +32,7 @@ var requestSample = function( name, callback ) {
 
           'Error decoding audio data ' +
 
-          'from ' + name + '.aif: ' +
+          'from ' + name + '.wav: ' +
 
           error
 
