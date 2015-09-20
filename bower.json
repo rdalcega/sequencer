@@ -1,0 +1,22 @@
+{
+  "name": "sequencer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rdalcega/sequencer",
+  "authors": [
+    "Rodrigo Delgado <rdalcega@gmail.com>"
+  ],
+  "description": "A drum sequencer to learn about web audio api",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3"
+  }
+}
