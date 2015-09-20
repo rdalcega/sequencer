@@ -1,13 +1,17 @@
-var Context = 
+var createContext = function( ) {
 
-  window.AudioContext ||
+  var Context = 
 
-  window.webkitAudioContext ||
+    window.AudioContext ||
 
-  window.mozAudioContext ||
+    window.webkitAudioContext ||
 
-  window.oAudioContext ||
+    window.mozAudioContext ||
 
-  window.msAudioContext;
+    window.oAudioContext ||
 
-var context = new Context( );
+    window.msAudioContext;
+
+  window.context = new Context( );
+
+};

@@ -20,7 +20,7 @@ var requestSample = function( name, callback ) {
 
   request.onload = function( ) {
 
-    context.decodeAudioData(
+    window.context.decodeAudioData(
 
       request.response,
 

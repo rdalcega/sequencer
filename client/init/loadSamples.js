@@ -1,25 +1,29 @@
-var sampleBuffers = {};
+var loadSamples = function( ) {
 
-var sampleNames = [
-  
-  'clap',
+  window.sampleBuffers = {};
 
-  'closedHat',
+  var sampleNames = [
+    
+    'clap',
 
-  'kick',
+    'closedHat',
 
-  'openHat',
+    'kick',
 
-  'snare'
+    'openHat',
 
-];
+    'snare'
 
-sampleNames.forEach( function( name ) {
+  ];
 
-  requestSample( name, function( audioBuffer ) {
+  sampleNames.forEach( function( name ) {
 
-    sampleBuffers[ name ] = audioBuffer;
+    requestSample( name, function( audioBuffer ) {
+
+      window.sampleBuffers[ name ] = audioBuffer;
+
+    });
 
   });
 
-});
+};
