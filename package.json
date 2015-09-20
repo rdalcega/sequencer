@@ -1,0 +1,19 @@
+{
+  "name": "sequencer",
+  "version": "1.0.0",
+  "description": "drum sequencer to learn about the web audio API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdalcega/sequencer.git"
+  },
+  "author": "rdalcega",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rdalcega/sequencer/issues"
+  },
+  "homepage": "https://github.com/rdalcega/sequencer"
+}
