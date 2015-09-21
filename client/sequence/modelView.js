@@ -8,7 +8,7 @@ var SequenceView = Backbone.View.extend({
 
     '<svg class="beat">',
 
-      '<circle cx="<%- cx %>" ',
+      '<circle cx="<%- cx %>" class="toggle"',
               
               'cy="<%- cy %>" ',
 
@@ -26,9 +26,17 @@ var SequenceView = Backbone.View.extend({
 
   ].join('')),
 
+  increaseRadius: function( event ) {
+
+    console.log( event );
+
+  },
+
   initialize: function( ) {
 
     this.render( );
+
+    this.$el.on( 'click', '.toggle', this.increaseRadius.bind( this ) );
 
   },
 
@@ -36,7 +44,7 @@ var SequenceView = Backbone.View.extend({
 
     var separation = 90 / ( this.model.sequenceLength - 1 );
 
-    var radius = separation / 4 + "%";
+    var radius = separation / 8 + "%";
 
     for( var i = 0; i < this.model.sequenceLength; i++ ) {
 

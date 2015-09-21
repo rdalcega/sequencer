@@ -22,8 +22,6 @@ var AppView = Backbone.View.extend({
 
   render: function( ) {
 
-    console.log( $('.sequencer') );
-
     this.$el.find('.sequencer').append( this.sequencesView.$el );
 
   }
