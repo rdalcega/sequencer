@@ -1,8 +1,8 @@
 var Tempo = Backbone.Model.extend({
 
-  defaults: {
+  initialize: function( ) {
 
-    "tempo": 120
+    this.tempo = 120;
 
   }
 

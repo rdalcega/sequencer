@@ -16,6 +16,14 @@ module.exports = {
 
     'client'
 
+  ),
+
+  dependencies: path.join(
+
+    __dirname,
+
+    'bower_components'
+
   )
 
 };

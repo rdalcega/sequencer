@@ -1,0 +1,63 @@
+.sequences {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+}
+
+.sequence {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 20%;
+
+}
+
+.kick {
+
+  top: 0;
+
+}
+
+.snare {
+
+  top: 20%;
+
+}
+
+.openHat {
+
+  top: 40%;
+
+}
+
+.closedHat {
+
+  top: 60%;
+
+}
+
+.clap {
+
+  top: 80%;
+
+}
+
+.beat {
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0;
+
+}

@@ -6,7 +6,13 @@ var TempoView = Backbone.View.extend({
 
   template: _.template([
 
-    '<input class="tempoSlider" ',
+    '<label for="tempoSlider">',
+
+      'BPM <b><%- value %></b>',
+
+    '</label>',
+
+    '<input id="tempoSlider" ',
 
            'type="range" ',
 
@@ -16,7 +22,7 @@ var TempoView = Backbone.View.extend({
 
            'step="1" ',
 
-           'value="120"',
+           'value="<%- value %>"',
 
    '>'
 
@@ -32,6 +38,8 @@ var TempoView = Backbone.View.extend({
 
     this.model.tempo = +event.target.value;
 
+    this.render( );
+
   },
 
   initialize: function( ) {
@@ -42,7 +50,11 @@ var TempoView = Backbone.View.extend({
 
   render: function( ) {
 
-    this.el.innerHTML = this.template();
+    this.el.innerHTML = this.template({
+
+      value: this.model.tempo
+
+    });
 
   }
 

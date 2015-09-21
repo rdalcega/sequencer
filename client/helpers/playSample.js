@@ -1,5 +1,5 @@
-var playSample = function( name, offset ) {
+var playSample = function( name, when, detune ) {
 
-  playSound( sampleBuffers[ name ], offset );
+  playSound( sampleBuffers[ name ], when, detune );
 
 };

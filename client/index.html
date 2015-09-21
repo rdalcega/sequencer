@@ -8,6 +8,40 @@
 
     <title>Sequencer</title>
 
+    <!-- styles -->
+
+    <link rel="stylesheet" href="static/app/style.css"></link>
+
+    <link rel="stylesheet" href="static/tempo/style.css"></link>
+
+    <link rel="stylesheet" href="static/sequence/style.css"></link>
+
+    <!-- dependencies -->
+
+    <script src="dependencies/underscore/underscore.js"></script>
+
+    <script src="dependencies/jquery/dist/jquery.js"></script>
+
+    <script src="dependencies/backbone/backbone.js"></script>
+
+    <!-- sources -->
+
+    <script src="static/tempo/model.js"></script>
+
+    <script src="static/tempo/view.js"></script>
+
+    <script src="static/sequence/model.js"></script>
+
+    <script src="static/sequence/modelView.js"></script>
+
+    <script src="static/sequence/collection.js"></script>
+
+    <script src="static/sequence/collectionView.js"></script>
+
+    <script src="static/app/model.js"></script>
+
+    <script src="static/app/view.js"></script>
+
     <script src="static/init/context.js"></script>
 
     <script src="static/XMLHTTPRequests/requestSample.js"></script>
@@ -24,7 +58,20 @@
 
   <body>
 
-    <h1>Worked!</h1>
+    <div class="sequencer"></div>
+
+    <div class="parameters"></div>
+
+    <script>
+
+      var appView = new AppView({
+
+        model: new App( )
+
+      });
+
+    </script>
+
 
   </body>
 

@@ -12,6 +12,12 @@ router.use( '/static', express.static(
 
 ));
 
+router.use( '/dependencies', express.static(
+
+  paths.dependencies
+
+));
+
 router.get( '/', function( request, response ) {
 
   response.sendFile( path.join(

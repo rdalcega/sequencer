@@ -1,0 +1,27 @@
+html {
+
+  font-family: 'helvetica';
+
+}
+
+body {
+
+  position: fixed;
+
+  width: 100%;
+
+  height: 100%;
+
+}
+
+.sequencer {
+
+  position: fixed;
+
+  width: 100%;
+
+  height: 50%;
+
+  top: 0;
+
+}

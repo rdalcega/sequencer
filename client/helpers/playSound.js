@@ -1,6 +1,8 @@
-var playSound = function( buffer, offset ) {
+var playSound = function( buffer, when, detune ) {
 
-  offset = offset || 0;
+  when = when || 0;
+
+  detune = detune || 0;
 
   var source = window.context.createBufferSource( );
 
@@ -8,6 +10,8 @@ var playSound = function( buffer, offset ) {
 
   source.connect( window.context.destination );
 
-  source.start( context.currentTime + offset );
+  source.detune.value = 100 * detune;
+
+  source.start( when );
 
 };
